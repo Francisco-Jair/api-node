@@ -11,6 +11,7 @@ mongoose.connect("mongodb+srv://teste:k9mCM97Pg8cu49uR@aprendendo.opjsn.mongodb.
 
 //Carregando os models
 const Product = require('./models/products')
+const Customer = require('./models/customer')
 
 //Carregando as rotas
 const index = require('./routers/index_route')
