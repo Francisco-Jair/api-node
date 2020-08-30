@@ -17,6 +17,7 @@ const Order = require('./models/order')
 //Carregando as rotas
 const index = require('./routers/index_route')
 const product = require('./routers/product_route')
+const customer = require('./routers/customer_route')
 
 const app = express();
 
@@ -25,6 +26,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use('/', index)
 app.use('/products', product)
+app.use('/customers', customer)
 
 
 module.exports = app
