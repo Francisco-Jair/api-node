@@ -6,3 +6,5 @@ module.exports = {
     sendgridKey: 'chave_sendgrid',
     containerConnectString: 'TBD',
 }
+
+//https://app.sendgrid.com/settings/api_keys -> Site para envio de email
