@@ -1,10 +1,11 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
+const config = require('./config')
 
 
 //Conectar ao banco de dados
-mongoose.connect("mongodb+srv://teste:k9mCM97Pg8cu49uR@aprendendo.opjsn.mongodb.net/aprendendo?retryWrites=true&w=majority", {
+mongoose.connect(config.connectionString, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
